@@ -1,0 +1,44 @@
+{
+  "name": "project-shimshon",
+  "version": "1.0.0",
+  "description": "ne'emalim",
+  "main": "src/app.js",
+  "scripts": {
+    "lint": "eslint . --cache",
+    "prettier": "prettier --no-semi --single-quote --arrow-parens always \"src/**/*.js\" --write",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://chendoron@github.com/chendoron/project-shimshon.git"
+  },
+  "author": "Chen Doron <chendoron85@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chendoron/project-shimshon/issues"
+  },
+  "homepage": "https://github.com/chendoron/project-shimshon#readme",
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.0.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^23.6.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "1.15.2"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js}"
+    ]
+  },
+  "pre-commit": [
+    "test",
+    "lint"
+  ]
+}
