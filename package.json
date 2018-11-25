@@ -19,6 +19,9 @@
     "url": "https://github.com/chendoron/project-shimshon/issues"
   },
   "homepage": "https://github.com/chendoron/project-shimshon#readme",
+  "dependencies": {
+    "fastify": "^1.13.0"
+  },
   "devDependencies": {
     "eslint": "^5.9.0",
     "eslint-config-prettier": "^3.3.0",
